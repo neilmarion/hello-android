@@ -1,9 +1,9 @@
-/home/neil/DEV/hello-android/platforms/android/bin/classes.dex : \
-/home/neil/DEV/hello-android/platforms/android/bin/classes/com/example/hello/HelloWorld.class \
-/home/neil/DEV/hello-android/platforms/android/bin/classes/com/example/hello/R$string.class \
-/home/neil/DEV/hello-android/platforms/android/bin/classes/com/example/hello/R.class \
-/home/neil/DEV/hello-android/platforms/android/bin/classes/com/example/hello/R$drawable.class \
-/home/neil/DEV/hello-android/platforms/android/bin/classes/com/example/hello/R$attr.class \
-/home/neil/DEV/hello-android/platforms/android/bin/classes/com/example/hello/BuildConfig.class \
-/home/neil/DEV/hello-android/platforms/android/bin/classes/com/example/hello/R$xml.class \
-/home/neil/DEV/hello-android/platforms/android/bin/dexedLibs/cordova-3.1.0-03a8f00a64201ebaeae67bc3757f6fad.jar \
+/home/neilmarion/DEV/hello-android/platforms/android/bin/classes.dex : \
+/home/neilmarion/DEV/hello-android/platforms/android/bin/classes/com/example/hello/R$string.class \
+/home/neilmarion/DEV/hello-android/platforms/android/bin/classes/com/example/hello/R.class \
+/home/neilmarion/DEV/hello-android/platforms/android/bin/classes/com/example/hello/BuildConfig.class \
+/home/neilmarion/DEV/hello-android/platforms/android/bin/classes/com/example/hello/R$xml.class \
+/home/neilmarion/DEV/hello-android/platforms/android/bin/classes/com/example/hello/HelloWorld.class \
+/home/neilmarion/DEV/hello-android/platforms/android/bin/classes/com/example/hello/R$attr.class \
+/home/neilmarion/DEV/hello-android/platforms/android/bin/classes/com/example/hello/R$drawable.class \
+/home/neilmarion/DEV/hello-android/platforms/android/bin/dexedLibs/cordova-3.1.0-18ef42e995bf1d5c18c16cb67ea6dc90.jar \

@@ -1,43 +1,44 @@
 <!DOCTYPE html> 
 <html> 
 	<head> 
-	<title>My Page</title> 
-	<meta name="viewport" content="width=device-width, initial-scale=1"> 
-	<link rel="stylesheet" href="css/jquery.mobile-1.1.0.min.css" />
-	<script src="js/jquery-1.7.1.min.js"></script>
-	<script src="js/jquery.mobile-1.1.0.min.js"></script>
-	<script src="js/index.js"></script>
-</head> 
-<body> 
+    <title>My Page</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" href="css/jquery.mobile-1.1.0.min.css" />
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/jquery.mobile-1.1.0.min.js"></script>
+    <script src="js/index.js"></script>
+  </head> 
 
+  <body> 
+    <div data-role="page" id="home">
+      <div data-role="header">
+        <h1>My Title</h1>
+      </div><!-- /header -->
 
+      <input type="button" id="take-photo" onclick="changePage('#take-photo')" value="Take Photo">
+      <input type="button" id="photo-library" onclick="changePage('#photo-library')" value="Photo Library">
+      <input type="button" id="katsucraze-gallery" onclick="changePage('#katsucraze-gallery')" value="Katsucraze Gallery">
+    </div><!-- /page -->
 
-<div data-role="page" id="home">
+    <div id="take-photo">
+      <div id="another-page-title">
+        <h1>Another Page</h1>
+      </div><!-- /header -->
+        <input type="button" id="next" onclick="changePage('#home')" value="Button">
+    </div>    
 
-	<div data-role="header">
-		<h1>My Title</h1>
-	</div><!-- /header -->
+    <div id="photo-library">
+      <div id="another-page-title">
+        <h1>Another Page</h1>
+      </div><!-- /header -->
+        <input type="button" id="next" onclick="changePage('#home')" value="Button">
+    </div>    
 
-<ul data-role="listview" data-inset="true" data-filter="true">
-	<li><a href="#">Acura</a></li>
-	<li><a href="#">Audi</a></li>
-	<li><a href="#">BMW</a></li>
-	<li><a href="#">Cadillac</a></li>
-	<li><a href="#">Ferrari</a></li>
-</ul>
-
-<input type="button" id="next" onclick="changePage('#another-page')" value="Button">
-
-</div><!-- /page -->
-
-<div id="another-page">
-	<div id="another-page-title">
-		<h1>Another Page</h1>
-	</div><!-- /header -->
-    <input type="button" id="next" onclick="changePage('#home')" value="Button">
-</div>    
-
-
-
-</body>
+    <div id="katsucraze-gallery">
+      <div id="another-page-title">
+        <h1>Another Page</h1>
+      </div><!-- /header -->
+        <input type="button" id="next" onclick="changePage('#home')" value="Button">
+    </div>    
+  </body>
 </html>
