@@ -6,6 +6,45 @@
     <link rel="stylesheet" href="css/jquery.mobile-1.1.0.min.css" />
     <script src="js/jquery-1.7.1.min.js"></script>
     <script src="js/jquery.mobile-1.1.0.min.js"></script>
+  </head> 
+
+  <body> 
+    <div data-role="page" id="home">
+      <div data-role="header">
+        <h1>My Title</h1>
+      </div><!-- /header -->
+
+      <input type="button" id="take-photo" onclick="capturePhoto();" value="Take Photo">
+      <input type="button" id="photo-library" onclick="getPhoto(pictureSource.PHOTOLIBRARY);" value="Photo Library">
+      <input type="button" onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);" value="From Photo Album">
+      <input type="button" id="katsucraze-gallery" onclick="changePage('#katsucraze-gallery')" value="Katsucraze Gallery">
+      <img style="display:none;width:60px;height:60px;" id="smallImage" src="" />
+      <img style="display:none;" id="largeImage" src="" />
+    </div><!-- /page -->
+
+    <div id="see-photo">
+      <div id="another-page-title">
+        <h1>Another Page</h1>
+      </div><!-- /header -->
+      <div id="pre-image-container">
+      </div>
+        <input type="button" id="next" onclick="changePage('#home')" value="Button">
+    </div>    
+
+    <div id="photo-library">
+      <div id="another-page-title">
+        <h1>Another Page</h1>
+      </div><!-- /header -->
+        <input type="button" id="next" onclick="changePage('#home')" value="Button">
+    </div>    
+
+    <div id="katsucraze-gallery">
+      <div id="another-page-title">
+        <h1>Another Page</h1>
+      </div><!-- /header -->
+        <input type="button" id="next" onclick="changePage('#home')" value="Button">
+    </div>    
+
     <script type="text/javascript" src="phonegap.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" charset="utf-8">
@@ -28,7 +67,7 @@
       //
       function onPhotoDataSuccess(imageData) {
         // Uncomment to view the base64 encoded image data
-        // console.log(imageData);
+        console.log(imageData);
 
         // Get image handle
         //
@@ -36,12 +75,14 @@
 
         // Unhide image elements
         //
-        smallImage.style.display = 'block';
+        $('#pre-image-container').append('<img src="'+imageData+'" />');
+        changePage('#see-photo');
 
         // Show the captured photo
         // The inline CSS rules are used to resize the image
         //
-        smallImage.src = "data:image/jpeg;base64," + imageData;
+        smallImage.style.display = 'block';
+        smallImage.src = imageData;
       }
 
       // Called when a photo is successfully retrieved
@@ -97,38 +138,7 @@
     <script type="text/javascript">
       app.initialize();
     </script>
-  </head> 
 
-  <body> 
-    <div data-role="page" id="home">
-      <div data-role="header">
-        <h1>My Title</h1>
-      </div><!-- /header -->
 
-      <input type="button" id="take-photo" onclick="capturePhoto();" value="Take Photo">
-      <input type="button" id="photo-library" onclick="changePage('#photo-library')" value="Photo Library">
-      <input type="button" id="katsucraze-gallery" onclick="changePage('#katsucraze-gallery')" value="Katsucraze Gallery">
-    </div><!-- /page -->
-
-    <div id="take-photo">
-      <div id="another-page-title">
-        <h1>Another Page</h1>
-      </div><!-- /header -->
-        <input type="button" id="next" onclick="changePage('#home')" value="Button">
-    </div>    
-
-    <div id="photo-library">
-      <div id="another-page-title">
-        <h1>Another Page</h1>
-      </div><!-- /header -->
-        <input type="button" id="next" onclick="changePage('#home')" value="Button">
-    </div>    
-
-    <div id="katsucraze-gallery">
-      <div id="another-page-title">
-        <h1>Another Page</h1>
-      </div><!-- /header -->
-        <input type="button" id="next" onclick="changePage('#home')" value="Button">
-    </div>    
   </body>
 </html>

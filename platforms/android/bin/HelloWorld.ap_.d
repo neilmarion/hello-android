@@ -27,8 +27,10 @@
 /home/neilmarion/DEV/hello-android/platforms/android/assets/www/phonegap.js \
 /home/neilmarion/DEV/hello-android/platforms/android/assets/www/libpeerconnection.log \
 /home/neilmarion/DEV/hello-android/platforms/android/assets/www/js/index.js \
+/home/neilmarion/DEV/hello-android/platforms/android/assets/www/js/target \
 /home/neilmarion/DEV/hello-android/platforms/android/assets/www/js/jquery.mobile-1.1.0.min.js \
 /home/neilmarion/DEV/hello-android/platforms/android/assets/www/js/jquery-1.7.1.min.js \
+/home/neilmarion/DEV/hello-android/platforms/android/assets/www/js/target/target-script-min.js \
 /home/neilmarion/DEV/hello-android/platforms/android/assets/www/spec/index.js \
 /home/neilmarion/DEV/hello-android/platforms/android/assets/www/spec/helper.js \
 /home/neilmarion/DEV/hello-android/platforms/android/assets/www/spec/lib \
